@@ -58,7 +58,7 @@
 
 .banner {
     //box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: #002658;
+    background-color: #0D0C24;
     .banner-img {
         width: 100%;
         height: 100vh;
@@ -102,7 +102,6 @@
     }
 }
 
-
 }
 
 .test {
@@ -115,29 +114,72 @@
 }
 
 .about-game {
-    background-color: #002658;
+    background-color: #0D0C24;
+    height: 100vh;
 
-    .about-text {
+    .details-circle-right {
+        position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: #42496A;
-        clip-path: polygon(15% 0, 100% 0, 100% 100%, 40% 100%);
-
-        
+        background-color: #754B4F;
+        clip-path: circle(30% at 100% 0);
     }
 
-    .decoration-image{
-        display: flex;
+    .datails-circle-left {
         position: absolute;
-        z-index: 999;
-        top: 120%;
-        left: 15%;
+        width: 100%;
+        height: 100vh;
+        background-color: #754B4F;
+        clip-path: circle(30% at 5% 105%);
+    }
 
-        img {
-            width: 320px;
-            height: 320px;
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    .about {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+
+        .about-text {
+            position: absolute;
+            z-index: 999;
+            width: 30%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-left: 28%;
+
+            h1 {
+                font-size: 40px;
+                letter-spacing: 5px;
+                font-weight: 700;
+                padding-bottom: 50px;
+            }
+
+            .description{
+                width: 65%;
+                font-weight: 400;
+                line-height: 22px;
+                padding-bottom: 20px;
+            }
+
+            .atention-text {
+                width: 65%;
+                font-size: 12px;
+                line-height: 18px;
+                font-style:italic;
+            }
         }
 
+        .about-img {
+            width: 280px;
+            position: absolute;
+            left: 50%;
+            top: 112%;
+            border-radius: 30px;
+        }
     }
+
+    
+
+    
 }
